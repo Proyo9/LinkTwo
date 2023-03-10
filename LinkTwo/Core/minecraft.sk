@@ -1,20 +1,28 @@
 command /linktwo [<text>] [<text>]:
     permission: op
-    permission message: &aCurrenly running &eLinkTwo (version)&a.
+    permission message: &8[&eLinkTwo&8] &aCurrenly running &eLinkTwo (version)&a.
     trigger:
         # modules, uninstall [confirm], update
         if arg-1 is not set:
             send "&e&lLinkTwo"
         else if arg-1 is "modules":
+            if size of {l2mods::*} > 52:
+                send "&8[&eLinkTwo&8] &cThere are too many installed modules."
+                stop
             set metadata tag "l2_moduleGui" of player to chest inventory with 6 rows named "&8[&eLinkTwo&8] &6Installed Modules"
-            set slot 0 of metadata tag "vanillaGUI" of player to stone named "&6General Kenobi"
-            open (metadata tag "vanillaGUI" of player) to player
+            set {_num} to 0
+            loop {l2mods::*}:
+                # check if module is disabled and change item
+                set slot {_num} of metadata tag "l2_moduleGui" of player to gray concrete named "&f%loop-value%" with lore "module information"
+                add 1 to {_num}
+            open (metadata tag "l2_moduleGui" of player) to player
 
 on inventory click:
     if metadata tag "l2_moduleGui" is set:
         cancel event
         set {_mod} to uncolored name of event-clicked item
         l2_disableModule({_mod})
+        open (metadata tag "l2_moduleGui" of player) to player
 
 on inventory close:
     delete metadata tag "l2_moduleGui" of player if metadata tag "l2_moduleGui" of player is set
