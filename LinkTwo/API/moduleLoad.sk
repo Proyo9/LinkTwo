@@ -1,1 +1,9 @@
 # Delete all modules on start/stop then have modules call the load function to load.
+
+function l2_loadModule(string: modName, string: modDesc, string: modAuthor, string: modVer) :: boolean:
+
+function l2_delModule(string: modName) :: boolean:
+
+function l2_disableModule(string: modName) :: boolean:
+
+function l2_enableModule(string: modName) :: boolean:
