@@ -5,3 +5,5 @@ function l2_getUUID(string: id) :: offlineplayer:
 function l2_getPlayer(string: id) :: offlineplayer:
 
 function l2_isLinked(offlineplayer: plr) :: boolean:
+
+function l2_addArg(integer: pos, string: name) :: boolean:
