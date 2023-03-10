@@ -1,0 +1,9 @@
+command /linktwo [<text>] [<text>] [<text>] [<text>]
+    permission: op
+    permission message: &aCurrenly running &eLinkTwo (version)&a.
+    trigger:
+        if arg-1 is not set:
+            send "&e&lLinkTwo"
+
+on join:
+    # Check for updates and send to operators
