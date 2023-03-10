@@ -1,0 +1,1 @@
+# Delete all modules on start/stop then have modules call the load function to load.
