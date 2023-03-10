@@ -1,6 +1,7 @@
 # Delete all modules on start/stop then have modules call the load function to load.
 # {l2mod.%moduleName%::setting}
 # {l2mods::*}
+# max modules: 52
 
 function l2_loadModule(string: modName, string: modDesc, string: modAuthor, string: modVer) :: boolean:
 
