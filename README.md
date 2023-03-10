@@ -5,3 +5,8 @@ An open source Discord bot that allows you to link your Discord server with your
 [Disky v4](https://disky.me/)
 
 [Skript-Reflect](https://www.spigotmc.org/resources/skript-reflect.82259/)
+
+## Instructions
+- Download L2.zip from [Py9.dev](https://py9.dev/)
+- Extract the zip file and place the LinkTwo folder in scripts
+- Configure settings in LinkTwo>config.sk
