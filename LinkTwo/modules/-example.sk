@@ -1,0 +1,6 @@
+# View API/Docs.txt to view more information.
+on load:
+    l2_loadModule("Example Module", "A cool module for all of your needs!", "Proyo9", "1.0")
+
+command !test:
+    ...
