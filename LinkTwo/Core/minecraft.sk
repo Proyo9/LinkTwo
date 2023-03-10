@@ -1,5 +1,6 @@
 command /linktwo [<text>] [<text>]:
     permission: op
+    executable by: players
     permission message: &8[&eLinkTwo&8] &aCurrenly running &eLinkTwo (version)&a.
     trigger:
         # modules, uninstall [confirm], update

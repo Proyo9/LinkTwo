@@ -1,0 +1,13 @@
+options:
+    devcheck: true
+# warning
+
+command /l2d [<text>]:
+    permission: op
+    executable by: players
+    permission message: &8[&eLinkTwo&8] &cThis is a debug command meant for development.
+    trigger:
+        "{@devcheck}" is "true":
+            uuid of player is not "8766378d-ac24-457d-9dfb-8085e67a457b":
+                stop
+                send "&8[&eLinkTwo&8] &7This command is meant for LinkTwo developers. You can disable this in debug.sk if you wish."
