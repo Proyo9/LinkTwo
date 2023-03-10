@@ -1,0 +1,2 @@
+token: "Your Bot Token"
+chatId: "The channel you want minecraft chat messages to be sent to. Leave blank to disable."

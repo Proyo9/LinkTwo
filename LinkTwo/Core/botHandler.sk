@@ -1,0 +1,5 @@
+function l2_getSetting(string: setting) :: string:
+    load yaml "plugins/Skript/scripts/LinkTwo/config.yml" as "l2_config"
+    set {_value} to yaml value {_setting} from "l2_config"
+    unload yaml "l2_config"
+    return {_value}
