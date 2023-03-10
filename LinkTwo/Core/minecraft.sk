@@ -17,6 +17,7 @@ command /linktwo [<text>] [<text>]:
                 set slot {_num} of metadata tag "l2_moduleGui" of player to gray concrete named "&f%loop-value%" with lore "module information"
                 add 1 to {_num}
             open (metadata tag "l2_moduleGui" of player) to player
+        else if arg-1 is "":
 
 on inventory click:
     if metadata tag "l2_moduleGui" is set:

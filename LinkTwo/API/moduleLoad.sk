@@ -5,6 +5,8 @@
 
 function l2_loadModule(string: modName, string: modDesc, string: modAuthor, string: modVer, string: fileName) :: boolean:
 
+function l2_reloadModule(string: modName) :: boolean:
+
 function l2_delModule(string: modName) :: boolean:
 
 function l2_disableModule(string: modName) :: boolean:
