@@ -1,9 +1,23 @@
-command /linktwo [<text>] [<text>] [<text>] [<text>]
+command /linktwo [<text>] [<text>]:
     permission: op
     permission message: &aCurrenly running &eLinkTwo (version)&a.
     trigger:
+        # modules, uninstall [confirm], update
         if arg-1 is not set:
             send "&e&lLinkTwo"
+        else if arg-1 is "modules":
+            set metadata tag "l2_moduleGui" of player to chest inventory with 6 rows named "&8[&eLinkTwo&8] &6Installed Modules"
+            set slot 0 of metadata tag "vanillaGUI" of player to stone named "&6General Kenobi"
+            open (metadata tag "vanillaGUI" of player) to player
+
+on inventory click:
+    if metadata tag "l2_moduleGui" is set:
+        cancel event
+        set {_mod} to uncolored name of event-clicked item
+        l2_disableModule({_mod})
+
+on inventory close:
+    delete metadata tag "l2_moduleGui" of player if metadata tag "l2_moduleGui" of player is set
 
 on load:
     # Unload modules
