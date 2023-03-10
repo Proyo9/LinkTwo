@@ -1,0 +1,3 @@
+options:
+    token: # Replace this comment with your bot token.
+    chatId: # Replace this comment with the id of the channel that you want cross-messaging to be.
