@@ -1,0 +1,10 @@
+on load:
+    l2_loadModule("LinkTwo Premium", "A test module that might turn into something.", "Proyo9", "1.0", "premium.sk")
+    l2_addArgs("premium,argChoice1/argChoice2")
+
+on command "linktwo premium":
+    #
+on command "linktwo premium argChoice1":
+    #
+on command "linktwo premium argChoice2":
+    #
