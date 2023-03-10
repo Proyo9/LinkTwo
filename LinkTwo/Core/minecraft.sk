@@ -5,5 +5,8 @@ command /linktwo [<text>] [<text>] [<text>] [<text>]
         if arg-1 is not set:
             send "&e&lLinkTwo"
 
+on load:
+    # Unload modules
+
 on join:
     # Check for updates and send to operators

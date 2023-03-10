@@ -3,7 +3,7 @@
 # {l2mods::*}
 # max modules: 52
 
-function l2_loadModule(string: modName, string: modDesc, string: modAuthor, string: modVer) :: boolean:
+function l2_loadModule(string: modName, string: modDesc, string: modAuthor, string: modVer, string: fileName) :: boolean:
 
 function l2_delModule(string: modName) :: boolean:
 
