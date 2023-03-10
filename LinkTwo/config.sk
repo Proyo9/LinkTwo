@@ -1,3 +1,7 @@
 options:
     token: # Replace this comment with your bot token.
     chatId: # Replace this comment with the id of the channel that you want cross-messaging to be.
+
+on load: # Global Settings (Do not touch)
+    set {linktwo.settings::token} to "{@token}"
+    set {linktwo.settings::chat} to "{@chatId}"

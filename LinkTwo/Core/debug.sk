@@ -1,8 +1,8 @@
-options:
+options: # Warning: If you disable this, you will be able to use developer command which could potentially break something if you don't know whare you're doing.
     devcheck: true
-# warning
 
-command /l2d [<text>]:
+
+command /l2d [<text>] [<text>]:
     permission: op
     executable by: players
     permission message: &8[&eLinkTwo&8] &cThis is a debug command meant for development.
@@ -11,3 +11,7 @@ command /l2d [<text>]:
             uuid of player is not "8766378d-ac24-457d-9dfb-8085e67a457b":
                 stop
                 send "&8[&eLinkTwo&8] &7This command is meant for LinkTwo developers. You can disable this in debug.sk if you wish."
+        if arg-1 is "reload":
+            if arg-2 is "*":
+            else:
+                
