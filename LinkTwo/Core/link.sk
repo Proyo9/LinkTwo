@@ -1,0 +1,16 @@
+on load: 
+    set {_cmd::link} to new slash command named "link" with description "Link you Minecraft account to Discord."
+    add new required integer option named "code" with description "Verification Code" to options of {_cmd::link}
+
+    set {_cmd::profile} to new slash command named "profile" with description "View someone's profile."
+    add new string option named "name" with description "Minecraft Username" to options of {_cmd::profile}
+
+    update {_cmd::*} globally in bot named "LinkTwo"
+
+on slash command: 
+    event-string = "link":
+        set {_code} to argument "code" as integer
+        reply with "%{_code}%"
+    event-string = "profile":
+        set {_player} to argument "name" as offlineplayer
+        reply with "%{_profile}%"
