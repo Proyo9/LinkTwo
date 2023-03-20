@@ -7,3 +7,5 @@ function l2_getPlayer(string: id) :: offlineplayer:
 function l2_isLinked(offlineplayer: plr) :: boolean:
 
 function l2_addArgs(string: args) :: boolean:
+
+function l2_configGet(string: args) :: string:
