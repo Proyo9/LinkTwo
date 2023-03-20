@@ -12,6 +12,7 @@ messages:
       linkSuccess: "{prefix} &aYou have successfully linked your Minecraft account to {discordUser}."
       linkError1: "{prefix} &cYou have already linked your Minecraft account to {discordUser}."
       moduleError52: "{prefix} &cThere are too many installed modules."
+      moduleLoadError: "{prefix} &c{moduelName} is already loaded."
       devError: "{prefix} &7This command is meant for LinkTwo developers. You can disable this in debug.sk if you wish."
     discord:
       linkSuccess: "Successfully linked account to {minecraftUser}."

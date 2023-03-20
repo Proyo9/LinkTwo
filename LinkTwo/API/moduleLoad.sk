@@ -3,7 +3,17 @@
 # {l2mods::*}
 # max modules: 52
 
+on skript load:
+    delete {l2mods::*}
+
 function l2_loadModule(string: modName, string: modDesc, string: modAuthor, string: modVer, string: fileName) :: boolean:
+    return false if {l2mod.%modName%::disabled} is true
+    if size of {l2mods::*} > 52:
+        send "Max modules reached" to console # change to yml config moduleError52 later
+        return false
+    if {l2mod.%modName%::loaded} is true:
+        send "Module already loaded" to console # change to yml config moduleLoadError later
+        return false
 
 function l2_reloadModule(string: modName) :: boolean:
 

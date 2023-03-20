@@ -1,0 +1,2 @@
+on load:
+    l2_loadModule("LinkTwo Profile", "An official LinkTwo module.", "LinkTwo", "1.0", "profile.sk")
