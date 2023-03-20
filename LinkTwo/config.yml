@@ -1,3 +1,72 @@
-token: "Your Bot Token"
-chatId: "The channel you want minecraft chat messages to be sent to. Leave blank to disable."
+token: "BOT_TOKEN"
+chatId: "CHANNEL_ID"
+language: en # en = english, es = español, de = deutsch, ru = русский, zh = 中文, ja = 日本語, ko = 한국어
 storageType: 0 # Do not change this.
+
+# Messages
+
+messages:
+  prefix: "&8[&eLinkTwo&8]"
+  en:
+    minecraft:
+      linkSuccess: "{prefix} &aYou have successfully linked your Minecraft account to {discordUser}."
+      linkError1: "{prefix} &cYou have already linked your Minecraft account to {discordUser}."
+      moduleError52: "{prefix} &cThere are too many installed modules."
+      devError: "{prefix} &7This command is meant for LinkTwo developers. You can disable this in debug.sk if you wish."
+    discord:
+      linkSuccess: "Successfully linked account to {minecraftUser}."
+      linkError1: "Your account is already linked to {minecraftUser}."
+  es:
+    minecraft:
+      linkSuccess: "{prefix} &aHas vinculado tu cuenta de Minecraft a {discordUser}."
+      linkError1: "{prefix} &cYa has vinculado tu cuenta de Minecraft a {discordUser}."
+      moduleError52: "{prefix} &cHay demasiados módulos instalados."
+      devError: "{prefix} &7Este comando es para desarrolladores de LinkTwo. Puedes desactivarlo en debug.sk si lo deseas."
+    discord:
+      linkSuccess: "Has vinculado tu cuenta a {minecraftUser}."
+      linkError1: "Tu cuenta ya está vinculada a {minecraftUser}."
+  de:
+    minecraft:
+      linkSuccess: "{prefix} &aDu hast deinen Minecraft-Account erfolgreich mit {discordUser} verknüpft."
+      linkError1: "{prefix} &cDu hast deinen Minecraft-Account bereits mit {discordUser} verknüpft."
+      moduleError52: "{prefix} &cEs sind zu viele Module installiert."
+      devError: "{prefix} &7Dieser Befehl ist für LinkTwo-Entwickler gedacht. Du kannst dies in debug.sk deaktivieren, wenn du dies wünschst."
+    discord:
+      linkSuccess: "Du hast erfolgreich deinen Account mit {minecraftUser} verknüpft."
+      linkError1: "Dein Account ist bereits mit {minecraftUser} verknüpft."
+  ru:
+    minecraft:
+      linkSuccess: "{prefix} &aВы успешно связали свой аккаунт Minecraft с {discordUser}."
+      linkError1: "{prefix} &cВы уже связали свой аккаунт Minecraft с {discordUser}."
+      moduleError52: "{prefix} &cУстановлено слишком много модулей."
+      devError: "{prefix} &7Эта команда предназначена для разработчиков LinkTwo. Вы можете отключить это в debug.sk, если хотите."
+    discord:
+      linkSuccess: "Вы успешно связали свой аккаунт с {minecraftUser}."
+      linkError1: "Ваш аккаунт уже связан с {minecraftUser}."
+  zh:
+    minecraft:
+      linkSuccess: "{prefix} &a您已成功将您的Minecraft帐户链接到{discordUser}。"
+      linkError1: "{prefix} &c您已将您的Minecraft帐户链接到{discordUser}。"
+      moduleError52: "{prefix} &c安装了太多模块。"
+      devError: "{prefix} &7此命令适用于LinkTwo开发人员。如果您愿意，可以在debug.sk中禁用此功能。"
+    discord:
+      linkSuccess: "已成功将帐户链接到{minecraftUser}。"
+      linkError1: "您的帐户已链接到{minecraftUser}。"
+  ja:
+    minecraft:
+      linkSuccess: "{prefix} &aあなたは{discordUser}にMinecraftアカウントをリンクしました。"
+      linkError1: "{prefix} &cあなたはすでに{discordUser}にMinecraftアカウントをリンクしています。"
+      moduleError52: "{prefix} &cインストールされているモジュールが多すぎます。"
+      devError: "{prefix} &7このコマンドはLinkTwo開発者向けです。必要に応じてdebug.skで無効にできます。"
+    discord:
+      linkSuccess: "アカウントを{minecraftUser}にリンクしました。"
+      linkError1: "あなたのアカウントはすでに{minecraftUser}にリンクされています。"
+  ko:
+    minecraft:
+      linkSuccess: "{prefix} &aMinecraft 계정을 {discordUser}에 성공적으로 연결했습니다."
+      linkError1: "{prefix} &c이미 {discordUser}에 Minecraft 계정을 연결했습니다."
+      moduleError52: "{prefix} &c설치된 모듈이 너무 많습니다."
+      devError: "{prefix} &7이 명령은 LinkTwo 개발자를 위해 만들어졌습니다. 원한다면 debug.sk에서 이를 비활성화할 수 있습니다."
+    discord:
+      linkSuccess: "계정을 {minecraftUser}에 성공적으로 연결했습니다."
+      linkError1: "계정이 이미 {minecraftUser}에 연결되어 있습니다."
