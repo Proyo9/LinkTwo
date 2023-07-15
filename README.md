@@ -12,4 +12,4 @@ An open source Discord bot that allows you to link your Discord server with your
 **LinkTwo is not actually in a functional state yet, it is still being worked on**
 - Download L2.zip from [Py9.dev](https://py9.dev/)
 - Extract the zip file and place the LinkTwo folder in scripts
-- Configure settings in LinkTwo>config.sk
+- Configure settings in LinkTwo>config.yml
